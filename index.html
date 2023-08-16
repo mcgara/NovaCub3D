@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCub 3D</title>
+    <link rel="icon" type="image/x-icon" href="./public/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Neuton&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="bg-lg fc">
+    <header class="container-fluid p-0 d-flex justify-content-center">
+      <div class="container position-absolute z-2" id="logo">
+        <img
+          class="img-fluid d-block mx-auto w-25 pt-1 pt-sm-4 pt-md-5"
+          src="./public/logo.png"
+        />
+        <h1 class="text-center pb-1 pt-sm-2 pt-md-3 fsv-2">NovaCub 3D</h1>
+        <div
+          class="row w-75 mx-auto my-1 my-sm-3"
+          style="width: 45%; height: 2.5vh !important"
+        >
+          <div class="col rounded-5 h-100 bg-rg-1">&ThickSpace;</div>
+          <div
+            class="col-1 mx-3 rounded-circle h-100 bg-rg-1"
+            style="width: 1% !important"
+          ></div>
+          <div class="col rounded-5 h-100 bg-rg-1">&ThickSpace;</div>
+        </div>
+        <h2 class="text-center fsv-5 my-1 my-sm-4">Creamos tu imaginación</h2>
+      </div>
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./public/carousel/img-1.jpeg"
+              class="d-block w-100"
+              style="filter: brightness(50%)"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/carousel/img-2.jpeg"
+              class="d-block w-100"
+              style="filter: brightness(50%)"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/carousel/img-3.jpeg"
+              class="d-block w-100"
+              style="filter: brightness(50%)"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev z-3"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next z-3"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand fc fc-hover" href="#">
+          <img src="./public/logo.png" width="10%" alt="NovaCub 3D"/>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fc fc-hover" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fc fc-hover" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="p-0 my-5">
+      <h2 class="text-center fsv-4">¿Por qué NovaCub 3D?</h2>
+      <div
+        class="my-4 mx-2 mx-md-3 mx-lg-4 row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4"
+      >
+        <div class="col">
+          <div class="card rounded-5 bg-lg-1 fc">
+            <img src="./public/img-2.jpg" class="card-img-top rounded-top-5" />
+            <div class="card-body">
+              <h4 class="card-title px-sm-2 px-lg-3">
+                Medical Records Management 1
+              </h4>
+              <p class="card-text px-sm-2 px-lg-3">
+                Easily access and share medical records with your healthcare
+                professional, ensuring more efficient care.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-5 bg-lg-1 fc">
+            <img src="./public/img-2.jpg" class="card-img-top rounded-top-5" />
+            <div class="card-body">
+              <h4 class="card-title px-sm-2 px-lg-3">
+                Medical Records Management 2
+              </h4>
+              <p class="card-text px-sm-2 px-lg-3">
+                Easily access and share medical records with your healthcare
+                professional, ensuring more efficient care.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-5 bg-lg-1 fc">
+            <img src="./public/img-2.jpg" class="card-img-top rounded-top-5" />
+            <div class="card-body">
+              <h4 class="card-title px-sm-2 px-lg-3">
+                Medical Records Management 3
+              </h4>
+              <p class="card-text px-sm-2 px-lg-3">
+                Easily access and share medical records with your healthcare
+                professional, ensuring more efficient care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 p-4"></div>
+
+      <div class="card m-0 rounded-0 bg-tertiary" style="color: var(--bg-secondary);">
+        <div class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center">
+          <div class="col-10 col-lg-8 col-xl-4 pt-5 pb-xl-5 px-0">
+            <img src="./public/img-3.jpg" class="img-fluid rounded-5" />
+          </div>
+          <div class="col-11 col-lg-10 col-xl-7">
+            <div
+              class="card-body p-4 h-100 d-flex align-items-center"
+            >
+            <p class="card-text fs-5 p-2">
+                <span class="fs-1 fw-bold">Title Lorem lepsu door</span><br />
+                Eiusmod ad est deserunt consectetur excepteur. Dolore magna ad
+                nisi nisi dolore occaecat veniam occaecat id anim. Sint culpa in
+                nostrud velit aliqua deserunt officia sint anim in laboris est
+                veniam. Labore fugiat mollit dolor sint aliquip aliqua excepteur
+                elit deserunt consectetur ea id aute.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 p-4"></div>
+
+      <div class="card m-0 m-md-5 rounded-5 bg-secondary fc">
+        <div class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center">
+          <div class="col-11 col-lg-10 col-xl-7">
+            <div
+              class="card-body p-4 h-100 d-flex align-items-center"
+            >
+            <p class="card-text fs-5">
+                <span class="fs-1 fw-bold">Title Lorem lepsu door</span><br />
+                Eiusmod ad est deserunt consectetur excepteur. Dolore magna ad
+                nisi nisi dolore occaecat veniam occaecat id anim. Sint culpa in
+                nostrud velit aliqua deserunt officia sint anim in laboris est
+                veniam. Labore fugiat mollit dolor sint aliquip aliqua excepteur
+                elit deserunt consectetur ea id aute.
+              </p>
+            </div>
+          </div>
+          <div class="col-10 col-lg-8 col-xl-4 pb-5 pt-xl-5 px-0">
+            <img src="./public/img-3.jpg" class="img-fluid rounded-5" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="fs-2">
+        Laboris Lorem eiusmod eu Lorem Lorem fugiat laboris deserunt quis
+        laboris ipsum sunt velit duis. Voluptate ad aliqua minim consectetur
+      </p>
+    </footer>
+  </body>
+</html>

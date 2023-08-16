@@ -1,0 +1,79 @@
+:root {
+  --bg-primary: #32B5E1;
+  --bg-secondary: #42035E;
+  --bg-tertiary: #EEE;
+}
+
+
+.fsv {
+  font-size: calc(2vw + 2vh / 2) !important;
+}
+.fsv-1 {
+  font-size: calc(7vw + 7vh / 2) !important;
+}
+.fsv-2 {
+  font-size: calc(6vw + 6vh / 2) !important;
+}
+.fsv-3 {
+  font-size: calc(5vw + 5vh / 2) !important;
+}
+.fsv-4 {
+  font-size: calc(4vw + 4vh / 2) !important;
+}
+.fsv-5 {
+  font-size: calc(3vw + 3vh / 2) !important;
+}
+.fsv-6 {
+  font-size: calc(2vw + 2vh / 2) !important;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+.bg-tertiary {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.bg-lg {
+  background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-tertiary)) !important;
+}
+.bg-lg-1 {
+  background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary)) !important;
+}
+.bg-rg {
+  background: radial-gradient(closest-side, var(--bg-tertiary), var(--bg-primary)) !important;
+}
+.bg-rg-1 {
+  background: radial-gradient(var(--bg-primary), var(--bg-secondary)) !important;
+}
+
+.fc {
+  color: white;
+}
+.fc-primary {
+  color: var(--bg-primary);
+}
+.fc-secondary {
+  color: var(--bg-secondary);
+}
+.fc-tertiary {
+  color: var(--bg-tertiary);
+}
+.fc-primary-hover:hover {
+  color: var(--bg-primary);
+}
+.fc-secondary:hover {
+  color: var(--bg-secondary);
+}
+.fc-hover:hover {
+  color: var(--bg-primary);
+}
+
+body {
+  font-family: 'Allura', cursive;
+  font-family: 'Neuton', serif;
+}
+
