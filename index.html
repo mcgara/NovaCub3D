@@ -95,13 +95,10 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-secondary">
-      <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand fc fc-hover" href="#">
-          <img src="./public/logo.png" width="10%" alt="NovaCub 3D"/>
-        </a>
+    <nav class="navbar navbar-expand-sm bg-secondary sticky-top">
+      <div class="container-fluid p-0">
         <button
-          class="navbar-toggler"
+          class="navbar-toggler w-100 h-100 m-0 bg-lg-1 fc-tertiary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -109,15 +106,57 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" style="background: none">
+            <img class="img-fluid" src="./public/logo.png" />
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 d-flex align-items-center w-100 justify-content-center"
+          >
             <li class="nav-item">
-              <a class="nav-link active fc fc-hover" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link px-1 px-sm-2 px-md-4 mx-1 mx-sm-2 fc fc-hover"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link fc fc-hover" href="#">Link</a>
+              <a
+                class="nav-link px-1 px-sm-2 px-md-4 mx-1 mx-sm-2 fc fc-hover"
+                href="#"
+                >Galleria</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle px-1 px-sm-2 px-md-4 mx-1 mx-sm-2 fc fc-hover"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu bg-lg-1">
+                <li><a class="dropdown-item fs-5 fc" href="#">Diseños</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item fs-5 fc" href="#">Figuras</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item fs-5 fc" href="#">Impresoras</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item fs-5 fc" href="#">Otros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-1 px-sm-2 px-md-4 mx-1 mx-sm-2 fc fc-hover"
+                href="#"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
@@ -175,16 +214,19 @@
 
       <div class="w-100 p-4"></div>
 
-      <div class="card m-0 rounded-0 bg-tertiary" style="color: var(--bg-secondary);">
-        <div class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center">
+      <div
+        class="card m-0 rounded-0 bg-tertiary"
+        style="color: var(--bg-secondary)"
+      >
+        <div
+          class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center"
+        >
           <div class="col-10 col-lg-8 col-xl-4 pt-5 pb-xl-5 px-0">
             <img src="./public/img-3.jpg" class="img-fluid rounded-5" />
           </div>
           <div class="col-11 col-lg-10 col-xl-7">
-            <div
-              class="card-body p-4 h-100 d-flex align-items-center"
-            >
-            <p class="card-text fs-5 p-2">
+            <div class="card-body p-4 h-100 d-flex align-items-center">
+              <p class="card-text fs-5 p-2">
                 <span class="fs-1 fw-bold">Title Lorem lepsu door</span><br />
                 Eiusmod ad est deserunt consectetur excepteur. Dolore magna ad
                 nisi nisi dolore occaecat veniam occaecat id anim. Sint culpa in
@@ -200,12 +242,12 @@
       <div class="w-100 p-4"></div>
 
       <div class="card m-0 m-md-5 rounded-5 bg-secondary fc">
-        <div class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center">
+        <div
+          class="row row-cols-1 row-cols-xl-2 g-0 d-flex justify-content-center"
+        >
           <div class="col-11 col-lg-10 col-xl-7">
-            <div
-              class="card-body p-4 h-100 d-flex align-items-center"
-            >
-            <p class="card-text fs-5">
+            <div class="card-body p-4 h-100 d-flex align-items-center">
+              <p class="card-text fs-5">
                 <span class="fs-1 fw-bold">Title Lorem lepsu door</span><br />
                 Eiusmod ad est deserunt consectetur excepteur. Dolore magna ad
                 nisi nisi dolore occaecat veniam occaecat id anim. Sint culpa in
@@ -222,11 +264,87 @@
       </div>
     </main>
 
-    <footer>
-      <p class="fs-2">
-        Laboris Lorem eiusmod eu Lorem Lorem fugiat laboris deserunt quis
-        laboris ipsum sunt velit duis. Voluptate ad aliqua minim consectetur
-      </p>
+    <div class="w-100 p-4"></div>
+
+    <footer class="container-fluid pt-3 px-2 px-sm-3 px-md-5 bg-tertiary fc-secondary">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex align-items-center justify-content-center">
+        <div class="col">
+          <div class="row d-flex align-items-center justify-content-center">
+            <img class="img-fluid w-25" src="./public/logo.png" />
+            <h1 class="w-50 text-nowrap">NovaCub 3D</h1>
+          </div>
+
+          <div class="row fs-5 p-3">
+            <p>
+              Exercitation veniam quis nostrud culpa ut labore aute enim aliquip
+              fugiat nisi. Non incididunt esse ad aliqua minim non consectetur.
+            </p>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+          <div class="row"><h3>Te contactaremos</h3></div>
+          <div class="row py-2 w-100">
+            <form class="d-flex fs-3 fc-secondary" role="text">
+              <input class="form-control me-2" type="email" placeholder="example@email.com" aria-label="Enviar">
+              <button class="btn bg-primary fs-5 fc" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row my-2 ps-3"><h3>Siguenos y Contactanos</h3></div>
+          <div class="row my-2">
+            <a 
+              class="col-6 text-decoration-none d-flex align-items-center justify-content-evenly"
+              href="#"
+            >
+              <img class="img-fluid w-25" src="./public/social/facebook.png" />
+              <h4 class="w-50 fc-secondary fc-hover">NovaCub</h4>
+            </a>
+          </div>
+          <div class="row my-2">
+            <a 
+              class="col-6 text-decoration-none d-flex align-items-center justify-content-evenly"
+              href="#"
+            >
+              <img class="img-fluid w-25" src="./public/social/instagram.png" />
+              <h4 class="w-50 fc-secondary fc-hover">NovaCub3D</h4>
+            </a>
+          </div>
+          <div class="row my-2">
+            <a 
+              class="col-6 text-decoration-none d-flex align-items-center justify-content-evenly"
+              href="#"
+            >
+              <img class="img-fluid w-25" src="./public/social/tiktok.png" />
+              <h4 class="w-50 fc-secondary fc-hover">@NovaCub3D</h4>
+            </a>
+          </div>
+          <div class="row my-2">
+            <a 
+              class="col-6 text-decoration-none d-flex align-items-center justify-content-evenly"
+              href="#"
+            >
+              <img class="img-fluid w-25" src="./public/social/gmail.png" />
+              <h4 class="w-50 fc-secondary fc-hover">NovaCub3D@gmail.com</h4>
+            </a>
+          </div>
+          <div class="row my-2">
+            <a 
+              class="col-6 text-decoration-none d-flex align-items-center justify-content-evenly"
+              href="#"
+            >
+              <img class="img-fluid w-25" src="./public/social/whatsapp.png" />
+              <h4 class="w-50 fc-secondary fc-hover text-nowrap">+57 301 457 1750</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-2 pt-3 border-top border-3 border-secondary text-center">
+        <p>&copy; NovaCub 3D. All Right Reserved. Code licensed MIT</p>
+      </div>
     </footer>
   </body>
 </html>
