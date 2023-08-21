@@ -78,9 +78,19 @@
 .border-secondary {
   border-color: var(--bg-secondary) !important;
 }
+.border-tertiary {
+  border-color: var(--bg-tertiary) !important;
+}
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'Allura', cursive;
   font-family: 'Neuton', serif;
+}
+
+iframe[seamless] {
+  border: none;
+  background-color: blue;
 }
 
